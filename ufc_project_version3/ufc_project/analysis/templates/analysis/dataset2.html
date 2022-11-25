@@ -1,0 +1,180 @@
+
+ <!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+        a[disabled] {
+   pointer-events: none;
+   cursor: default;
+}
+
+        html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a:link, a:visited {
+    color: white;
+    background-color: #228B22;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #228B22;
+    text-decoration: none;
+    text-align: center;
+    font: 10px Arial, sans-serif;
+}
+a:hover, a:active {
+    background-color: #9c6ae1;
+    border-color: #7443b6;
+}
+
+#footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+
+ table {
+        overflow-wrap: break-word;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 10px;
+            width: 100%;
+            table-layout:fixed;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: green;
+        }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.full-width {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+        </style>
+<script>
+    function abc()
+    {
+     if(window.flag==1)
+     {
+    document.getElementById("fileUpload").disabled = true;
+    }
+    }
+</script>
+
+    </head>
+    <body onload="abc();">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+            <header id="main-header" class="py-2 bg-dark text-white"  >
+                    <div class="wrapper container">
+
+
+                      <div class="row"  >
+                        <div class="col-md-12 text-center">
+                            <img src="https://i.ibb.co/5KBRsDm/photo-1552072092-7f9b8d63efcb.jpg" alt="logo" border="0" width="230px" height="230px"  align="left" >
+                          <h1 style="padding-top:15px"><i class="fa fa-gear"></i> UFC Fights Predictor</h1>
+                        </div>
+                      </div>
+
+                    </div>
+                  </header>
+<div class="row justify-content-center">
+                                   <div class="col-md-7 ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+        <li><a  href="index2"><strong><h1>Home</h1></strong> </a></li>
+
+        <li><a  href="dataset"><strong><h1>Select Fight To Predict Result</h1></strong> </a></li>
+
+        <li><a  href="feature_selection" ><strong><h1>Results</h1></strong> </a></li>
+
+   </ul>
+
+  </div>
+</nav>
+                    </div></div>
+
+            </br></br>
+  <div class="row justify-content-center">
+                                   <div class="col-md-7 ">
+
+  <h1>UFC Fight Results : </h1>
+  <br><br>
+                       <h1> <strong> Match Between : </strong></h1>
+
+      <h3> <strong> {{ player1 }} VS {{ player2 }} </strong></h3>
+<br>
+                                                 <h1> <strong> Winner : </strong></h1>
+
+                                       <br>
+    <h3>The winner is : {{ winner }}  </h3>
+  <br>
+                                                              <h1> <strong> Winning Probabilities of players : </strong></h1>
+
+                                       <br>
+       <h3>The winning probability of {{ player1 }} is : {{ p1prob }}%  </h3>
+  <br>
+       <h3>The winning probability of {{ player2 }} is : {{ p2prob }}%  </h3>
+  <br>
+                                                       <h1> <strong> Technical Knockout Or Knockout : </strong></h1>
+
+
+       <h3>{{ winner }} won the fight by {{ wintype }}  </h3>
+  <br>
+
+                                                                                   <h1> <strong> Match Round  : </strong></h1>
+
+
+       <h3>{{ winner }} won the fight in Round # {{ round }}  </h3>
+  <br>
+                                   </div></div>
+
+</br></br>
+
+    <footer style="text-align: center;" >
+            <hr>
+            <p>&copy; 2021 UFC Fights Predictor, Inc.</p>
+    </footer>
+<script>
+
+
+
+</script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="" async defer></script>
+    </body>
+</html>
